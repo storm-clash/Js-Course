@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      button {
+        color: #fff;
+        background: #4b67f6;
+        border-radius: 8px;
+        border: 1px solid;
+        margin: 5px 5px;
+      }
+      button:hover {
+        cursor: pointer;
+        background: #fff;
+        color: #4b67f6;
+        transition: 0.3ms ease;
+        box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+      }
+    </style>
+    <title>Dom</title>
+  </head>
+  <body>
+    <button>hello</button>
+    <button class="js-button">second button</button>
+    <script>
+      document.querySelector("button").innerHTML = "changed";
+
+      const buttonElement = document.querySelector(".js-button");
+
+      /*
+      document.body.innerHTML = "hello";
+      document.title = "Good job!";
+      */
+    </script>
+  </body>
+</html>

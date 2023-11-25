@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dom-project.css" />
+    <title>Dom Project</title>
+  </head>
+  <body>
+    <div class="youtube">
+      <p>YouTube Subscribe Button</p>
+      <button class="js-subscribe" onclick="changeText()">Subscribe</button>
+    </div>
+    <div>
+      <p>Rock Paper Scissors</p>
+      <a href="rocks-paper-scissors.html" target="_blank">Click here</a>
+    </div>
+
+    <div>
+      <p>Amazon Shipping Calculator</p>
+      <p>Orders under $40 = +$10 shipping.</p>
+      <p>Orders over $40 = FREE shipping.</p>
+
+      <input
+        class="order"
+        type="number"
+        id="value"
+        placeholder="Cost of Shipping"
+        onkeydown="handleCostKeyDown(event)"
+      />
+
+      <button onclick="calculateOrder()">Calculate</button>
+
+      <p class="js-order"></p>
+    </div>
+    <script src="dom-project.js"></script>
+  </body>
+</html>

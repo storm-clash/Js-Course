@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      button {
+        color: #fff;
+        background: #4b67f6;
+        border-radius: 8px;
+        border: 1px solid;
+        margin: 5px 5px;
+      }
+      button:hover {
+        cursor: pointer;
+        background: #fff;
+        color: #4b67f6;
+        transition: 0.3ms ease;
+        box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+      }
+    </style>
+    <title>Js Course</title>
+  </head>
+  <body>
+    <button onclick="alert('alerts')">Hello</button>
+
+    <button onclick="console.log(`Cart Quantity : ${cartQuantity}`)">
+      Show Quantity
+    </button>
+    <button
+      onclick="
+    cartQuantity = cartQuantity + 1;
+    console.log(`Cart Quantity : ${cartQuantity}`)"
+    >
+      Add to Cart
+    </button>
+    <button onclick="">+2</button>
+    <button onclick="">+3</button>
+    <button onclick="">Resert Cart</button>
+
+    <script>
+      let cartQuantity = 0;
+    </script>
+  </body>
+</html>

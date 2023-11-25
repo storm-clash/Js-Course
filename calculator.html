@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section>
+      <p class="js-calculator"></p>
+
+      <div class="grid">
+        <div>
+          <p class="js-one" onclick="updateCalculation('1')">1</p>
+        </div>
+        <div>
+          <p class="js-two" onclick="updateCalculation('2')">2</p>
+        </div>
+        <div>
+          <p class="js-three" onclick="updateCalculation('3')">3</p>
+        </div>
+        <div>
+          <p class="js-last last" onclick="updateCalculation(' + ')">+</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <p onclick="updateCalculation('4')">4</p>
+        </div>
+        <div>
+          <p onclick="updateCalculation('5')">5</p>
+        </div>
+        <div>
+          <p onclick="updateCalculation('6')">6</p>
+        </div>
+        <div>
+          <p class="last" onclick="updateCalculation(' - ')">-</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <p onclick="updateCalculation('7')">7</p>
+        </div>
+        <div>
+          <p onclick="updateCalculation('8')">8</p>
+        </div>
+        <div>
+          <p onclick="updateCalculation('9')">9</p>
+        </div>
+        <div>
+          <p class="last" onclick="updateCalculation(' * ')">*</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <p onclick="updateCalculation('0')">0</p>
+        </div>
+        <div>
+          <p onclick="updateCalculation('.')">.</p>
+        </div>
+        <div>
+          <p
+            onclick="
+          calculation = eval(calculation);
+  
+          // Display the calculation on the page
+          // instead of console.log
+          displayCalculation();
+  
+          localStorage.setItem('calculation', calculation);
+        "
+          >
+            =
+          </p>
+        </div>
+        <div>
+          <p class="last" onclick="updateCalculation(' / ')">/</p>
+        </div>
+      </div>
+      <div class="five-row">
+        <div>
+          <p
+            class="clear"
+            onclick="
+          calculation = '';
+  
+          // Display the calculation on the page
+          // instead of console.log
+          displayCalculation();
+  
+          localStorage.setItem('calculation', calculation);
+        "
+          >
+            Clear
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="calculator.js"></script>
+  </body>
+</html>

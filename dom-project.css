@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    color: #fff;
+    background: #4b67f6;
+    border-radius: 25px;
+    border: 1px solid;
+    padding: 7px 4px;
+  }
+  button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #4b67f6;
+    transition: 0.3ms ease;
+    box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+  }
+  div {
+    margin: 5px 5px;
+    margin-bottom: 50px;
+  }
+  input {
+    border-radius: 25px;
+    border: 1px solid;
+    padding: 7px 4px;
+  }
+  .js-test {
+    background-color: rgb(50, 201, 42);
+  }

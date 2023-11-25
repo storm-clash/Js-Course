@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="arrays-and-loops.css" />
+    <title>Arrays and Loops</title>
+  </head>
+  <body>
+    <div class="ejercice">
+      <p>Todo List Practice 1</p>
+      <input
+        type="text"
+        placeholder="Todo name"
+        id="todo"
+        class="js-practice1"
+      />
+      <button class="js-add" onclick="practice1()">Add</button>
+    </div>
+    <div class="ejercice">
+      <p>Todo List Practice 2</p>
+      <input
+        type="text"
+        placeholder="Todo name"
+        id="todo2"
+        class="js-practice2"
+      />
+      <button class="js-add2" onclick="practice2()">Add</button>
+      <div class="js-show-list"></div>
+    </div>
+    <div class="ejercice">
+      <p>Todo List</p>
+      <div class="practice3">
+        <input type="text" placeholder="Todo name" class="js-dateTodo" />
+        <input type="date" class="js-date" />
+        <button class="js-add3" onclick="practice3()">Add</button>
+        <div class="js-show-list2"></div>
+      </div>
+    </div>
+    <script>
+      const myArray = [10, 20, 30];
+      console.log(myArray);
+
+      console.log(myArray[0]);
+      myArray[0] = 99;
+      console.log(myArray);
+
+      [1, "hello", true, { name: "socks" }, [1, 2]];
+
+      console.log(Array.isArray([1, 2]));
+      console.log(myArray.length);
+
+      myArray.push(100);
+      console.log(myArray);
+
+      // index , number
+      myArray.splice(0, 2);
+      console.log(myArray);
+    </script>
+    <script src="arrays-and-loops.js"></script>
+  </body>
+</html>
